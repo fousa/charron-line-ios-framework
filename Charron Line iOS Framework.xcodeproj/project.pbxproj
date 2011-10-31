@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		606FA1C1145EC0C600AA487D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606FA1C0145EC0C600AA487D /* Foundation.framework */; };
+		606FA1C7145EC0C600AA487D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 606FA1C5145EC0C600AA487D /* InfoPlist.strings */; };
+		606FA1CF145EC11900AA487D /* CharronLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 606FA1CE145EC11900AA487D /* CharronLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		606FA1E2145EC15700AA487D /* CharronConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = 606FA1D1145EC15700AA487D /* CharronConnector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		606FA1E3145EC15700AA487D /* CharronConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 606FA1D2145EC15700AA487D /* CharronConnector.m */; };
+		606FA1E4145EC15700AA487D /* CharronDaysConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = 606FA1D3145EC15700AA487D /* CharronDaysConnector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		606FA1E5145EC15700AA487D /* CharronDaysConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 606FA1D4145EC15700AA487D /* CharronDaysConnector.m */; };
+		606FA1E6145EC15700AA487D /* CharronDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 606FA1D5145EC15700AA487D /* CharronDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		606FA1E7145EC15700AA487D /* CharronDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 606FA1D6145EC15700AA487D /* CharronDownloader.m */; };
+		606FA1E8145EC15700AA487D /* CharronFlightsConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = 606FA1D7145EC15700AA487D /* CharronFlightsConnector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		606FA1E9145EC15700AA487D /* CharronFlightsConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 606FA1D8145EC15700AA487D /* CharronFlightsConnector.m */; };
+		606FA1EA145EC15700AA487D /* CharronDay.h in Headers */ = {isa = PBXBuildFile; fileRef = 606FA1DA145EC15700AA487D /* CharronDay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		606FA1EB145EC15700AA487D /* CharronDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 606FA1DB145EC15700AA487D /* CharronDay.m */; };
+		606FA1EC145EC15700AA487D /* CharronFlight.h in Headers */ = {isa = PBXBuildFile; fileRef = 606FA1DC145EC15700AA487D /* CharronFlight.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		606FA1ED145EC15700AA487D /* CharronFlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 606FA1DD145EC15700AA487D /* CharronFlight.m */; };
+		606FA1EE145EC15700AA487D /* CharronMonth.h in Headers */ = {isa = PBXBuildFile; fileRef = 606FA1DE145EC15700AA487D /* CharronMonth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		606FA1EF145EC15700AA487D /* CharronMonth.m in Sources */ = {isa = PBXBuildFile; fileRef = 606FA1DF145EC15700AA487D /* CharronMonth.m */; };
+		606FA1F0145EC15700AA487D /* CharronYear.h in Headers */ = {isa = PBXBuildFile; fileRef = 606FA1E0145EC15700AA487D /* CharronYear.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		606FA1F1145EC15700AA487D /* CharronYear.m in Sources */ = {isa = PBXBuildFile; fileRef = 606FA1E1145EC15700AA487D /* CharronYear.m */; };
+		606FA202145ED52000AA487D /* NSString+CharronLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 606FA200145ED52000AA487D /* NSString+CharronLine.h */; settings = {ATTRIBUTES = (); }; };
+		606FA203145ED52000AA487D /* NSString+CharronLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 606FA201145ED52000AA487D /* NSString+CharronLine.m */; };
+		606FA206145ED56900AA487D /* NSDate+CharronLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 606FA204145ED56900AA487D /* NSDate+CharronLine.h */; settings = {ATTRIBUTES = (); }; };
+		606FA207145ED56900AA487D /* NSDate+CharronLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 606FA205145ED56900AA487D /* NSDate+CharronLine.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		606FA1BD145EC0C600AA487D /* Charron Line iOS Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; name = "Charron Line iOS Framework.framework"; path = CharronLine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		606FA1C0145EC0C600AA487D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		606FA1C4145EC0C600AA487D /* Charron Line iOS Framework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Charron Line iOS Framework-Info.plist"; sourceTree = "<group>"; };
+		606FA1C6145EC0C600AA487D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		606FA1C8145EC0C600AA487D /* Charron Line iOS Framework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Charron Line iOS Framework-Prefix.pch"; sourceTree = "<group>"; };
+		606FA1CE145EC11900AA487D /* CharronLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharronLine.h; sourceTree = "<group>"; };
+		606FA1D1145EC15700AA487D /* CharronConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharronConnector.h; sourceTree = "<group>"; };
+		606FA1D2145EC15700AA487D /* CharronConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharronConnector.m; sourceTree = "<group>"; };
+		606FA1D3145EC15700AA487D /* CharronDaysConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharronDaysConnector.h; sourceTree = "<group>"; };
+		606FA1D4145EC15700AA487D /* CharronDaysConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharronDaysConnector.m; sourceTree = "<group>"; };
+		606FA1D5145EC15700AA487D /* CharronDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharronDownloader.h; sourceTree = "<group>"; };
+		606FA1D6145EC15700AA487D /* CharronDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharronDownloader.m; sourceTree = "<group>"; };
+		606FA1D7145EC15700AA487D /* CharronFlightsConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharronFlightsConnector.h; sourceTree = "<group>"; };
+		606FA1D8145EC15700AA487D /* CharronFlightsConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharronFlightsConnector.m; sourceTree = "<group>"; };
+		606FA1DA145EC15700AA487D /* CharronDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharronDay.h; sourceTree = "<group>"; };
+		606FA1DB145EC15700AA487D /* CharronDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharronDay.m; sourceTree = "<group>"; };
+		606FA1DC145EC15700AA487D /* CharronFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharronFlight.h; sourceTree = "<group>"; };
+		606FA1DD145EC15700AA487D /* CharronFlight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharronFlight.m; sourceTree = "<group>"; };
+		606FA1DE145EC15700AA487D /* CharronMonth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharronMonth.h; sourceTree = "<group>"; };
+		606FA1DF145EC15700AA487D /* CharronMonth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharronMonth.m; sourceTree = "<group>"; };
+		606FA1E0145EC15700AA487D /* CharronYear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharronYear.h; sourceTree = "<group>"; };
+		606FA1E1145EC15700AA487D /* CharronYear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharronYear.m; sourceTree = "<group>"; };
+		606FA200145ED52000AA487D /* NSString+CharronLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CharronLine.h"; sourceTree = "<group>"; };
+		606FA201145ED52000AA487D /* NSString+CharronLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CharronLine.m"; sourceTree = "<group>"; };
+		606FA204145ED56900AA487D /* NSDate+CharronLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CharronLine.h"; sourceTree = "<group>"; };
+		606FA205145ED56900AA487D /* NSDate+CharronLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CharronLine.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		606FA1B8145EC0C600AA487D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				606FA1C1145EC0C600AA487D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		606FA1AF145EC0C600AA487D = {
+			isa = PBXGroup;
+			children = (
+				606FA1C2145EC0C600AA487D /* Charron Line iOS Framework */,
+				606FA1BF145EC0C600AA487D /* Frameworks */,
+				606FA1BE145EC0C600AA487D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		606FA1BE145EC0C600AA487D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				606FA1BD145EC0C600AA487D /* Charron Line iOS Framework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		606FA1BF145EC0C600AA487D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				606FA1C0145EC0C600AA487D /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		606FA1C2145EC0C600AA487D /* Charron Line iOS Framework */ = {
+			isa = PBXGroup;
+			children = (
+				606FA1CE145EC11900AA487D /* CharronLine.h */,
+				606FA1FF145ED52000AA487D /* Categories */,
+				606FA1D0145EC15700AA487D /* Connectors */,
+				606FA1D9145EC15700AA487D /* Models */,
+				606FA1C3145EC0C600AA487D /* Supporting Files */,
+			);
+			path = "Charron Line iOS Framework";
+			sourceTree = "<group>";
+		};
+		606FA1C3145EC0C600AA487D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				606FA1C4145EC0C600AA487D /* Charron Line iOS Framework-Info.plist */,
+				606FA1C5145EC0C600AA487D /* InfoPlist.strings */,
+				606FA1C8145EC0C600AA487D /* Charron Line iOS Framework-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		606FA1D0145EC15700AA487D /* Connectors */ = {
+			isa = PBXGroup;
+			children = (
+				606FA1D1145EC15700AA487D /* CharronConnector.h */,
+				606FA1D2145EC15700AA487D /* CharronConnector.m */,
+				606FA1D3145EC15700AA487D /* CharronDaysConnector.h */,
+				606FA1D4145EC15700AA487D /* CharronDaysConnector.m */,
+				606FA1D7145EC15700AA487D /* CharronFlightsConnector.h */,
+				606FA1D8145EC15700AA487D /* CharronFlightsConnector.m */,
+				606FA1D5145EC15700AA487D /* CharronDownloader.h */,
+				606FA1D6145EC15700AA487D /* CharronDownloader.m */,
+			);
+			path = Connectors;
+			sourceTree = "<group>";
+		};
+		606FA1D9145EC15700AA487D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				606FA1DA145EC15700AA487D /* CharronDay.h */,
+				606FA1DB145EC15700AA487D /* CharronDay.m */,
+				606FA1DC145EC15700AA487D /* CharronFlight.h */,
+				606FA1DD145EC15700AA487D /* CharronFlight.m */,
+				606FA1DE145EC15700AA487D /* CharronMonth.h */,
+				606FA1DF145EC15700AA487D /* CharronMonth.m */,
+				606FA1E0145EC15700AA487D /* CharronYear.h */,
+				606FA1E1145EC15700AA487D /* CharronYear.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		606FA1FF145ED52000AA487D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				606FA204145ED56900AA487D /* NSDate+CharronLine.h */,
+				606FA205145ED56900AA487D /* NSDate+CharronLine.m */,
+				606FA200145ED52000AA487D /* NSString+CharronLine.h */,
+				606FA201145ED52000AA487D /* NSString+CharronLine.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		606FA1B9145EC0C600AA487D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				606FA1E2145EC15700AA487D /* CharronConnector.h in Headers */,
+				606FA1E4145EC15700AA487D /* CharronDaysConnector.h in Headers */,
+				606FA1E6145EC15700AA487D /* CharronDownloader.h in Headers */,
+				606FA1EE145EC15700AA487D /* CharronMonth.h in Headers */,
+				606FA1F0145EC15700AA487D /* CharronYear.h in Headers */,
+				606FA1CF145EC11900AA487D /* CharronLine.h in Headers */,
+				606FA1EC145EC15700AA487D /* CharronFlight.h in Headers */,
+				606FA1EA145EC15700AA487D /* CharronDay.h in Headers */,
+				606FA1E8145EC15700AA487D /* CharronFlightsConnector.h in Headers */,
+				606FA206145ED56900AA487D /* NSDate+CharronLine.h in Headers */,
+				606FA202145ED52000AA487D /* NSString+CharronLine.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		606FA1BC145EC0C600AA487D /* Charron Line iOS Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 606FA1CB145EC0C600AA487D /* Build configuration list for PBXNativeTarget "Charron Line iOS Framework" */;
+			buildPhases = (
+				606FA1B6145EC0C600AA487D /* ShellScript */,
+				606FA1B7145EC0C600AA487D /* Sources */,
+				606FA1B8145EC0C600AA487D /* Frameworks */,
+				606FA1B9145EC0C600AA487D /* Headers */,
+				606FA1BA145EC0C600AA487D /* Resources */,
+				606FA1BB145EC0C600AA487D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Charron Line iOS Framework";
+			productName = "Charron Line iOS Framework";
+			productReference = 606FA1BD145EC0C600AA487D /* Charron Line iOS Framework.framework */;
+			productType = "com.apple.product-type.framework.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		606FA1B1145EC0C600AA487D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = 10to1;
+			};
+			buildConfigurationList = 606FA1B4145EC0C600AA487D /* Build configuration list for PBXProject "Charron Line iOS Framework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 606FA1AF145EC0C600AA487D;
+			productRefGroup = 606FA1BE145EC0C600AA487D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				606FA1BC145EC0C600AA487D /* Charron Line iOS Framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		606FA1BA145EC0C600AA487D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				606FA1C7145EC0C600AA487D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		606FA1B6145EC0C600AA487D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n\tUFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version  from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n  ([[ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]] || \\\n    ([[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n     [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n     [[ ! \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\n    )\n  )\nthen\n    exit 0\nfi\n\n\n# Clean other platform if needed\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]]\nthen\n\techo \"Platform \\\"$UFW_SDK_PLATFORM\\\" was cleaned recently. Cleaning \\\"$UFW_OTHER_PLATFORM\\\" as well\"\n\techo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\n\txcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\nfi\n\n\n# Make sure we are building from fresh binaries\n\nrm -rf \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\n\nif [[ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]]\nthen\n    rm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    rm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nfi\n";
+		};
+		606FA1BB145EC0C600AA487D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\nexport UFW_MASTER_SCRIPT_RUNNING=1\n\n\n# Functions\n\n## List files in the specified directory, storing to the specified array.\n#\n# @param $1 The path to list\n# @param $2 The name of the array to fill\n#\n##\nlist_files ()\n{\n    filelist=$(ls \"$1\")\n    while read line\n    do\n        eval \"$2[\\${#$2[*]}]=\\\"\\$line\\\"\"\n    done <<< \"$filelist\"\n}\n\n\n# Sanity check\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n    echo \"Framework target \\\"${TARGET_NAME}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\n    exit 1\nfi\n\n\n# Gather information\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n    UFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date.\n# We already checked the other platform in the prerun script.\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]\nthen\n    echo \"ONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM}: Skipping other platform build\"\nelse\n    # Make sure the other platform gets built\n    \n    echo \"Build other platform\"\n    \n    echo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    \n    \n    # Build the fat static library binary\n    \n    echo \"Create universal static library\"\n    \n    echo \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \n    echo mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nfi\n\n# Build embedded framework structure\n\necho \"Build Embedded Framework\"\n\necho rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\necho mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\necho cp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\ncp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\n\ndeclare -a UFW_FILE_LIST\nlist_files \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" UFW_FILE_LIST\nfor filename in \"${UFW_FILE_LIST[@]}\"\ndo\n    if [[ \"${filename}\" != \"Info.plist\" ]] && [[ ! \"${filename}\" =~ .*\\.lproj$ ]]\n    then\n        echo ln -sf \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n        ln -sf \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n    fi\ndone\n\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]\nthen\n    # Replace other platform's framework with a copy of this one (so that both have the same universal binary)\n    \n    echo \"Copy from $UFW_SDK_PLATFORM to $UFW_OTHER_PLATFORM\"\n    \n    echo rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    echo cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		606FA1B7145EC0C600AA487D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				606FA1E3145EC15700AA487D /* CharronConnector.m in Sources */,
+				606FA1E5145EC15700AA487D /* CharronDaysConnector.m in Sources */,
+				606FA1E7145EC15700AA487D /* CharronDownloader.m in Sources */,
+				606FA1E9145EC15700AA487D /* CharronFlightsConnector.m in Sources */,
+				606FA1EB145EC15700AA487D /* CharronDay.m in Sources */,
+				606FA1ED145EC15700AA487D /* CharronFlight.m in Sources */,
+				606FA1EF145EC15700AA487D /* CharronMonth.m in Sources */,
+				606FA1F1145EC15700AA487D /* CharronYear.m in Sources */,
+				606FA203145ED52000AA487D /* NSString+CharronLine.m in Sources */,
+				606FA207145ED56900AA487D /* NSDate+CharronLine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		606FA1C5145EC0C600AA487D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				606FA1C6145EC0C600AA487D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		606FA1C9145EC0C600AA487D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		606FA1CA145EC0C600AA487D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		606FA1CC145EC0C600AA487D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Charron Line iOS Framework/Charron Line iOS Framework-Prefix.pch";
+				INFOPLIST_FILE = "Charron Line iOS Framework/Charron Line iOS Framework-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		606FA1CD145EC0C600AA487D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Charron Line iOS Framework/Charron Line iOS Framework-Prefix.pch";
+				INFOPLIST_FILE = "Charron Line iOS Framework/Charron Line iOS Framework-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		606FA1B4145EC0C600AA487D /* Build configuration list for PBXProject "Charron Line iOS Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				606FA1C9145EC0C600AA487D /* Debug */,
+				606FA1CA145EC0C600AA487D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		606FA1CB145EC0C600AA487D /* Build configuration list for PBXNativeTarget "Charron Line iOS Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				606FA1CC145EC0C600AA487D /* Debug */,
+				606FA1CD145EC0C600AA487D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 606FA1B1145EC0C600AA487D /* Project object */;
+}

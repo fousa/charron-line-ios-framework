@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Charron Line iOS Framework' target in the 'Charron Line iOS Framework' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
