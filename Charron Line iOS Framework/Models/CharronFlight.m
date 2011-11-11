@@ -34,7 +34,7 @@
     flight.pilot = [[flightDictionary objectForKey:@"pilot"] capitalizedString];
     flight.club = [flightDictionary objectForKey:@"club"];
     flight.task = [flightDictionary objectForKey:@"task"];
-    flight.glider = [[flightDictionary objectForKey:@"glider"] capitalizedString];
+    if ([[flightDictionary objectForKey:@"glider"] class] != [NSNull class]) flight.glider = [[flightDictionary objectForKey:@"glider"] capitalizedString];
     flight.start = [flightDictionary objectForKey:@"start"];
     flight.score = [[flightDictionary objectForKey:@"score"] intValue];
     flight.igcURLString = [[flightDictionary objectForKey:@"igc"] stringByReplacingOccurrencesOfString:@"\\/" withString:@"/"];
